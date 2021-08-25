@@ -1,0 +1,177 @@
+body{	
+	width: 100%;
+	height: 1161px;
+	margin: 0 auto;
+	background: #FFFFFF;	
+	font-family: 'Oswald', sans-serif;
+}
+
+#global{	
+	width: 100%;
+	height: 1024px;
+	background: url(../images/pexels-cottonbro-4009401.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+
+header{	
+	width: 100%;
+	height: 137px;
+	left: 0px;
+	top: 0px;
+	display: grid;
+	grid-template-columns: 1450px 200px;	
+	background: rgba(0,0,0, .40);	
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);	
+}
+
+#global #logo{	
+	position: absolute;
+    z-index: 2;
+	margin-right: 40px;
+}
+
+#global #logo img{
+	margin-top: 5px;
+	margin-left: 20px;
+	width: 65%;
+	height: auto;	
+}
+
+#global #nav ul{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 500px;	
+	height: 100px;
+	float: right;	
+}
+
+#global #nav ul li{
+	margin: 20px;
+	margin-left: 70px;
+	float: right;
+	color: white;
+	height: 60px;
+	width: 160px;
+	line-height: 60px;
+	text-align: center;	
+	list-style: none;
+	font-size: 30px;	
+}
+#global #nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#global #nav ul li:hover{
+	background: #4285F4;
+	cursor: pointer;
+	border-radius: 20px;
+	transition: all 400ms;	
+}
+
+#global #nav ul li:not(:hover){
+	border-radius: 0px;
+	transition: all 400ms;	
+}
+
+#global #nav ul li:first-child{
+	background: #4285F4;
+}
+
+#global #nav ul li:first-child:hover{
+	background: #E50914;
+}
+
+#global #nav ul li:first-child:not(:hover){
+	background: #4285F4;
+}
+
+#global #linea1{
+	position: absolute;
+	width: 25%;
+	height: 0px;
+	left: 0px;
+	top: 140px;
+	background: #E50914;
+	border: 3px solid #E50914;
+}
+
+#global #linea2{
+	position: absolute;
+	width: 25%;
+	height: 0px;
+	left: 375px;
+	top: 140px;
+
+	background: #4285F4;
+	border: 3px solid #4285F4;
+}
+
+#global #linea3{
+	position: absolute;
+	width: 25%;
+	height: 0px;
+	left: 750px;
+	top: 140px;
+
+	background: #1DB954;
+	border: 3px solid #1DB954;
+}
+
+#global #linea4{
+	position: absolute;
+	width: 23.5%;
+	height: 0px;
+	left: 1125px;
+	top: 140px;
+
+	background: #F4B400;
+	border: 3px solid #F4B400;
+}
+
+/*BODY*/
+ 
+#rectangulo_middle{
+	position: relative;
+	width: 70%;
+	height: 600px;
+	left: 15%;
+	top: 10px;
+	background: rgba(0,0,0, .7);
+}
+
+#rectangulo_middle #letras_grandes{	
+	font-weight: bold;
+	letter-spacing: 20px;
+	font-size: 150px;	
+	text-align: center;	
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+#rectangulo_middle #eslogan{
+	font-size: 80px;
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+}
+
+footer{
+	background-color: #454242;
+}
+
+footer #logo_footer img{
+	margin-top: 5px;
+	margin-left: 20px;
+	width: 8%;
+	height: auto;
+}
+
+footer p{
+	font-size: 40px;
+	position: absolute;
+	top: 1030px;
+	left: 460px;
+	color: white;
+}
