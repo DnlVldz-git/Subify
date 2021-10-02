@@ -24,7 +24,6 @@ header{
 
 #global #logo{	
 	position: absolute;
-    z-index: 2;
 	margin-right: 40px;
 }
 
@@ -40,8 +39,7 @@ header{
 	margin-top: 20px;
 	margin-left: 500px;	
 	height: 100px;
-	float: right;	
-	
+	float: right;		
 }
 
 #global #nav ul li{
@@ -184,19 +182,53 @@ header{
 /*FOOTER*/
 footer{
 	background-color: #454242;
+    display: grid;
+    grid-template-columns: 470px 550px 400px;
 }
 
 footer #logo_footer img{
-	margin-top: 5px;
+	margin-top: 20px;
 	margin-left: 20px;
-	width: 8%;
+	width: 25%;
 	height: auto;
 }
 
+footer #boton_galeria{
+    height: 60px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: #E50914;        
+}
+
+footer #boton_galeria:hover{    
+    width: 42%;
+    height: 62px;
+    transition: 300ms all;
+    background-color:#4285F4;   
+    
+}
+
+footer #boton_galeria:not(:hover){
+    transition: 300ms all;    
+}
+
+footer #boton_galeria a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+footer #boton_galeria a:hover{    
+    color: white;
+}
+
 footer p{
-	font-size: 30px;
-	position: absolute;
-	top: 820px;
-	left: 500px;
+	font-size: 40px;	
 	color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }

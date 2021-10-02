@@ -1,6 +1,6 @@
 body{	
 	width: 100%;
-	height: 1161px;
+	height: auto;
 	margin: 0 auto;
 	background: #FFFFFF;	
 	font-family: 'Oswald', sans-serif;
@@ -8,8 +8,8 @@ body{
 
 #global{	
 	width: 100%;
-	height: 1024px;
-	background: url(../images/pexels-cottonbro-4009401.jpg) no-repeat;
+	height: auto;
+	background: url(../images/pexels-cottonbro-4009401.jg) no-repeat;
 	background-size: 100% 100%;	
 }
 
@@ -19,7 +19,7 @@ header{
 	left: 0px;
 	top: 0px;
 	display: grid;
-	grid-template-columns: 1450px 200px;	
+	grid-template-columns: 1450px 200px;
 	background: rgba(0,0,0, .40);	
 }
 
@@ -152,6 +152,97 @@ header{
 	text-align: center;
 	color: white;
 	margin-top: 40px;
+}
+
+section{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 720px 720px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+section #fotos{
+    background-color: #4285F4;
+}
+
+section #fotos:hover{
+    background-color: #E50914;    
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 300ms all;
+}
+
+section #fotos:not(:hover){    
+    transition: 300ms all;
+}
+
+#contenedor_multimedia{
+    display: grid;
+    grid-template-columns: 475px 475px 475px;    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;        
+}
+
+
+#contenedor_multimedia div img{
+    width: 90%;
+    height: 300px;
+}
+
+#contenedor_multimedia div img:hover{
+    width: 91%;
+    height: 302px;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+#contenedor_multimedia div img:not(:hover){    
+    transition: 300ms all;    
+}
+
+#contenedor_multimedia div iframe:hover{
+    width: 91%;
+    height: 302px;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+#contenedor_multimedia div iframe:not(:hover){    
+    transition: 300ms all;    
+}
+
+#contenedor_multimedia div p{
+    background-color: rgba(0,0,0, .40);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    height: 50px;
+    margin-top: 0;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+section #videos{
+    background-color: #1DB954;
+}
+
+section #videos:hover{
+    background-color: #F4B400;    
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 300ms all;
+}
+
+section #videos:not(:hover){    
+    transition: 300ms all;
 }
 
 footer{
