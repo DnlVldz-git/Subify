@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Subify</title>
-		<link href = "css/estiloLogin.css" rel = "stylesheet" type = "text/css" />
+		<link href = "css/estiloGaleriaFotos.css" rel = "stylesheet" type = "text/css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -14,12 +15,12 @@
 				<div id="top">
 					<div id="logo">
 						<img src="images/logo.png" alt="logo"/>
-					</div>									
-					<ul>																	
-						<li><a>CONTACTO</a></li>
-						<li><a href="registrar.html">REGISTRO</a></li>
+					</div>								
+					<ul>						
+						<li><a href="login.html">INGRESAR</a></li>						
+						<li><a href="registrar.html">REGISTRO</a></li>						
 						<li><a href="index.html">INICIO</a></li>	
-					</ul>																			
+					</ul>	
 				</div>
 				<div id="linea1">				
 				</div>
@@ -30,27 +31,26 @@
 				<div id="linea4">				
 				</div>				
 			</header>
-			
-			<div id="rectangulo_middle">
-				<h1>LOGIN</h1>
-				<h2>USUARIO:</h2>
-				<input id="user" type="text" name="usuario" />
-				<h2>CONTRASEÑA:</h2>
-				<input id ="psw" type="password" name="pswd"/>
-				<div id="boton_ingresar">
-					<a onclick="login();"><p>INGRESAR</p></a>
-				</div>
+
+			<section>
+				<div id="fotos" onclick="agregarFotos();">
+					<p >FOTOS</p>
+				</div>				
+			</section>
+			<div id="contenedor_multimedia">				
 			</div>
 			
+
+
 		</div>		
 		<footer>
 			<div id="logo_footer">
 				<img src="images/logo.png" alt="logo"/>
-			</div>
+			</div>            
 			<p> Todos los derechos reservados. Subify 2021</p>
-			<button id="boton_galeriaFotos"><a href="galeriaFotos.html">GALERÍA FOTOS</a></button>
-			<button id="boton_galeriaVideos"><a href="galeriaVideos.html">GALERÍA VIDEOS</a></button>
+            <button id="boton_galeria"><a href="galeriaVideos.html">GALERÍA VIDEOS</a></button>
 		</footer>					
-		<script src="js/scriptLogin.js"></script>	
+        <script src="js/scriptGaleriaFotos.js"></script>	
+
 	</body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Subify</title>
-		<link href = "css/estiloGaleria.css" rel = "stylesheet" type = "text/css" />
+		<link href = "css/estiloGaleriaVideos.css" rel = "stylesheet" type = "text/css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -12,16 +12,15 @@
 		
 		<div id="global">
 			<header>
-				
-				<div id="logo">
-					<img src="images/logo.png" alt="logo"/>
-				</div>				
-				<div id="nav">
-					<ul>
+				<div id="top">
+					<div id="logo">
+						<img src="images/logo.png" alt="logo"/>
+					</div>								
+					<ul>						
 						<li><a href="login.html">INGRESAR</a></li>						
-						<li><a>REGISTRO</a></li>
-						<li><a>CONTACTO</a></li>
-					</ul>														
+						<li><a href="registrar.html">REGISTRO</a></li>						
+						<li><a href="index.html">INICIO</a></li>	
+					</ul>	
 				</div>
 				<div id="linea1">				
 				</div>
@@ -33,19 +32,12 @@
 				</div>				
 			</header>
 
-			<section>
-				<div id="fotos" onclick="agregarFotos();">
-					<p >FOTOS</p>
-				</div>
+			<section>				
 				<div id="videos" onclick="agregarVideos();">
 					<p>VIDEOS</p>
 				</div>
 			</section>
-			<div id="contenedor_multimedia">
-				<div>
-					<img src="https://estaticos-cdn.elperiodico.com/clip/ee0263dc-718e-41f4-b88c-70f3ae679110_alta-libre-aspect-ratio_default_0.jpg" alt="fotuki">
-					<p>Disfruta tus series favoritas</p>
-				</div>
+			<div id="contenedor_multimedia">				
 			</div>
 			
 
@@ -56,9 +48,9 @@
 				<img src="images/logo.png" alt="logo"/>
 			</div>            
 			<p> Todos los derechos reservados. Subify 2021</p>
-            <button id="boton_galeria"><a href="galeria.html">GALERÍA</a></button>
+            <button id="boton_galeria"><a href="galeriaFotos.html">GALERÍA FOTOS</a></button>
 		</footer>					
-        <script src="js/scriptGaleria.js"></script>	
+        <script src="js/scriptGaleriaVideos.js"></script>	
 
 	</body>
 </html>

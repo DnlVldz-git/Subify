@@ -1,6 +1,5 @@
 body{	
-	width: 100%;
-	height: 1161px;
+	width: 100%;		
 	margin: 0 auto;
 	background: #FFFFFF;	
 	font-family: 'Oswald', sans-serif;
@@ -8,9 +7,8 @@ body{
 
 #global{	
 	width: 100%;
-	height: 1024px;
-	background: url(../images/pexels-cottonbro-4009401.jpg) no-repeat;
-	background-size: 100% 100%;	
+	height: 850px;
+	background-color: #C4C4C4;
 }
 
 header{	
@@ -125,34 +123,92 @@ header{
 	background: #F4B400;
 	border: 3px solid #F4B400;
 }
-
 /*BODY*/
- 
 #rectangulo_middle{
 	position: relative;
-	width: 70%;
+	width: 80%;
 	height: 600px;
-	left: 15%;
-	top: 10px;
-	background: rgba(0,0,0, .7);
+	left: 10%;
+	top: 15px;
+	background: #FFFFFF;
 }
 
-#rectangulo_middle #letras_grandes{	
-	font-weight: bold;
-	letter-spacing: 20px;
-	font-size: 150px;	
-	text-align: center;	
-	margin-top: 80px;
+#rectangulo_middle #gif{
+	width: 100%;
+	height: 100%;
+}
+
+#rectangulo_middle h1{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 40px;
+	font-size: 50px;
+	width: 15%;	
+	padding-top: 20px;
+	border-bottom: 10px solid #4285F4;	
 }
 
-#rectangulo_middle #eslogan{
-	font-size: 80px;
+#rectangulo_middle #input_1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#rectangulo_middle h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: center;
-	color: white;
-	margin-top: 40px;
+	font-size: 30px;
 }
 
+#rectangulo_middle input{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;    
+	padding: 10px 10px; 
+	line-height: 8px;
+}
+
+#rectangulo_middle .texto{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    width: 70%;
+	padding: 10px 10px; 
+	line-height: 8px;
+}
+
+#rectangulo_middle #boton_registrar {	
+	margin-top: 50px;
+	width: 17%;
+	height: 70px;
+	line-height: 68px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #F4B400;	
+}
+
+#rectangulo_middle #boton_registrar:hover {	
+	background-color: #4285F4;	
+	border-radius: 25px;
+	transition: all 400ms;
+    cursor: pointer;    
+}
+
+#rectangulo_middle #boton_registrar:not(:hover) {		
+	transition: all 400ms;
+}
+
+#rectangulo_middle #boton_registrar a{
+	font-size: 35px;
+	font-weight: bold;	
+	text-decoration: none;
+	color: black;
+}
+
+/*FOOTER*/
 footer{
 	background-color: #454242;
     display: grid;
@@ -176,7 +232,7 @@ footer #boton_galeriaFotos{
 }
 
 footer #boton_galeriaFotos:hover{    
-    width: 42%;
+    width: 44%;
     height: 102px;
     transition: 300ms all;
     background-color:#4285F4;   
@@ -209,7 +265,7 @@ footer #boton_galeriaVideos{
 }
 
 footer #boton_galeriaVideos:hover{    
-    width: 42%;
+    width: 44%;
     height: 102px;
     transition: 300ms all;
     background-color:#E50914;   
@@ -231,6 +287,7 @@ footer #boton_galeriaVideos a{
 footer #boton_galeriaVideos a:hover{    
     color: white;
 }
+
 
 footer p{
 	font-size: 40px;	

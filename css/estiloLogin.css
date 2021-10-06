@@ -15,34 +15,35 @@ header{
 	width: 100%;
 	height: 137px;
 	left: 0px;
-	top: 0px;
-	display: grid;
-	grid-template-columns: 1450px 200px;	
-	background: rgba(0,0,0, .6);	
-	box-sizing: border-box;	
+	top: 0px;	
+	background: rgba(0,0,0, .40);	
 }
 
-#global #logo{	
-	position: absolute;
-	margin-right: 40px;
+#top{
+	display: grid;	
+	grid-template-columns: 50% 50%;	
 }
 
 #global #logo img{
-	margin-top: 5px;
-	margin-left: 20px;
-	width: 65%;
-	height: auto;	
+	margin-top: 1%;
+	margin-left: 2%;
+	width: 15%;
+	height: auto;
 }
 
-#global #nav ul{
-	margin: 0 auto;
+#top ul{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;	
+}
+
+#global ul{
+	margin: 0 2%;
 	margin-top: 20px;
-	margin-left: 500px;	
 	height: 100px;
-	float: right;		
+	float: right;	
 }
 
-#global #nav ul li{
+#global ul li{
 	margin: 20px;
 	margin-left: 70px;
 	float: right;
@@ -52,32 +53,43 @@ header{
 	line-height: 60px;
 	text-align: center;	
 	list-style: none;
-	font-size: 30px;		
+	font-size: 30px;	
 }
-
-#global #nav ul li a{
+#global ul li a{
 	text-decoration: none;
 	color: white;
 }
 
-#global #nav ul li:hover{
+#global ul li:hover{
 	background: #4285F4;
 	cursor: pointer;
 	border-radius: 20px;
 	transition: all 400ms;	
 }
 
-#global #nav ul li:not(:hover){	
+#global ul li:not(:hover){
 	border-radius: 0px;
 	transition: all 400ms;	
 }
 
+#global ul li:last-child{
+	background: #4285F4;
+}
+
+#global ul li:last-child:hover{
+	background: #E50914;
+}
+
+#global ul li:last-child:not(:hover){
+	background: #4285F4;
+}
+
 #global #linea1{
 	position: absolute;
-	width: 25%;
+	width: 27%;
 	height: 0px;
-	left: 0px;
-	top: 134px;
+	left: 0;
+	top: 8.6em;
 	background: #E50914;
 	border: 3px solid #E50914;
 }
@@ -86,8 +98,8 @@ header{
 	position: absolute;
 	width: 25%;
 	height: 0px;
-	left: 375px;
-	top: 134px;
+	left: 26%;
+	top: 8.6em;
 	background: #4285F4;
 	border: 3px solid #4285F4;
 }
@@ -96,8 +108,8 @@ header{
 	position: absolute;
 	width: 25%;
 	height: 0px;
-	left: 750px;
-	top: 134px;
+	left: 51%;
+	top: 8.6em;
 	background: #1DB954;
 	border: 3px solid #1DB954;
 }
@@ -106,12 +118,11 @@ header{
 	position: absolute;
 	width: 23.5%;
 	height: 0px;
-	left: 1125px;
-	top: 134px;
+	left: 76%;
+	top: 8.6em;
 	background: #F4B400;
 	border: 3px solid #F4B400;
 }
-
 /*BODY*/
 #rectangulo_middle{
 	position: relative;
@@ -120,6 +131,11 @@ header{
 	left: 10%;
 	top: 15px;
 	background: #FFFFFF;
+}
+
+#rectangulo_middle #gif{
+	width: 100%;
+	height: 100%;
 }
 
 #rectangulo_middle h1{
@@ -183,38 +199,38 @@ header{
 footer{
 	background-color: #454242;
     display: grid;
-    grid-template-columns: 470px 550px 400px;
+    grid-template-columns: 28% 32% 20% 20%;
 }
 
 footer #logo_footer img{
-	margin-top: 20px;
-	margin-left: 20px;
-	width: 25%;
+	margin-top: 6%;
+	margin-left: 6%;
+	width: 30%;
 	height: auto;
 }
 
-footer #boton_galeria{
-    height: 60px;
-    margin-top: 60px;
+footer #boton_galeriaFotos{
+    height: 100px;
+    margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 42%;
     background-color: #E50914;        
 }
 
-footer #boton_galeria:hover{    
-    width: 42%;
-    height: 62px;
+footer #boton_galeriaFotos:hover{    
+    width: 44%;
+    height: 102px;
     transition: 300ms all;
     background-color:#4285F4;   
     
 }
 
-footer #boton_galeria:not(:hover){
+footer #boton_galeriaFotos:not(:hover){
     transition: 300ms all;    
 }
 
-footer #boton_galeria a{
+footer #boton_galeriaFotos a{
     text-decoration: none;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
@@ -222,9 +238,43 @@ footer #boton_galeria a{
     color: black;
 }
 
-footer #boton_galeria a:hover{    
+footer #boton_galeriaFotos a:hover{    
     color: white;
 }
+
+footer #boton_galeriaVideos{
+    height: 100px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    background-color: #4285F4;        
+}
+
+footer #boton_galeriaVideos:hover{    
+    width: 44%;
+    height: 102px;
+    transition: 300ms all;
+    background-color:#E50914;   
+    
+}
+
+footer #boton_galeriaVideos:not(:hover){
+    transition: 300ms all;    
+}
+
+footer #boton_galeriaVideos a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+footer #boton_galeriaVideos a:hover{    
+    color: white;
+}
+
 
 footer p{
 	font-size: 40px;	
