@@ -30,8 +30,13 @@ var foto4 = new foto();
 foto4.ruta = "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/bi_1860/public/media/image/2020/03/familia-viendo-disney-plus-1885289.jpg?itok=B8Qsaavp";
 foto4.alt = "foto_disney";
 foto4.descripcion = "Nosotros nos encargamos de eso";
+var foto5 = new foto();
+foto5.ruta = "https://static3-sevilla.abc.es/media/tecnologia/2020/09/10/s/trucos-amazon-primevideo-ksrD--620x349@abc.png";
+foto5.alt = "foto_amazonP";
+foto5.descripcion = "Contamos con una variedad de servicios";
 
-let arrFotos = [foto0, foto1, foto2, foto3, foto4];
+
+let arrFotos = [foto0, foto1, foto2, foto3, foto4, foto5];
 
 window.addEventListener('load', agregarFotos);
 
